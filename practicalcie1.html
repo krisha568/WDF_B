@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Event & Help Desk</title>
+
+    <style>
+        body{
+            font-family: Arial;
+            background-color: lightgray;
+        }
+
+        header{
+            background-color: navy;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a{
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        nav a:hover{
+            color: yellow;
+        }
+
+        .event{
+            background-color: white;
+            border: 1px solid black;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        form{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .faq{
+            background-color: white;
+            border: 1px solid black;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        footer{
+            background-color: navy;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>CHARUSAT</h1>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Events</a>
+        <a href="#">Registration</a>
+        <a href="#">FAQ</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<h2>Upcoming Events</h2>
+
+<div class="event">
+    <h3>Technical Seminar</h3>
+    <p>Date: 10 Jan 2026</p>
+    <p>Venue: Seminar Hall</p>
+    <button>Register Now</button>
+</div>
+
+<div class="event">
+    <h3>Hackathon</h3>
+    <p>Date: 15 Feb 2026</p>
+    <p>Venue: Lab 1</p>
+    <button>Register Now</button>
+</div>
+
+<div class="event">
+    <h3>Web Development Workshop</h3>
+    <p>Date: 20 Mar 2026</p>
+    <p>Venue: Computer Lab</p>
+    <button>Register Now</button>
+</div>
+
+<div class="event">
+    <h3>Project Exhibition</h3>
+    <p>Date: 5 Apr 2026</p>
+    <p>Venue: Auditorium</p>
+    <button>Register Now</button>
+</div>
+
+<h2>Registration Form</h2>
+
+<form>
+    Name:<br>
+    <input type="text"><br><br>
+
+    Student ID:<br>
+    <input type="text"><br><br>
+
+    Email:<br>
+    <input type="email"><br><br>
+
+    Mobile Number:<br>
+    <input type="tel"><br><br>
+
+    Select Event:<br>
+    <select>
+        <option>Technical Seminar</option>
+        <option>Hackathon</option>
+        <option>Web Development Workshop</option>
+        <option>Project Exhibition</option>
+    </select><br><br>
+
+    Gender:
+    <input type="radio" name="g"> Male
+    <input type="radio" name="g"> Female
+    <br><br>
+
+    <input type="submit" value="Register">
+    <input type="reset" value="Reset">
+</form>
+
+<h2>FAQ</h2>
+
+<div class="faq">
+    <b>How can I register for an event?</b>
+    <p>Fill the form and click Register.</p>
+</div>
+
+<div class="faq">
+    <b>Is event registration free?</b>
+    <p>Yes, registration is free.</p>
+</div>
+
+<div class="faq">
+    <b>Where will the event be conducted?</b>
+    <p>At the venue mentioned in the event details.</p>
+</div>
+
+<div class="faq">
+    <b>Can I participate in more than one event?</b>
+    <p>Yes, you can join multiple events.</p>
+</div>
+
+<footer>
+    © 2026 Student Events<br>
+    CHARUSAT, Anand
+</footer>
+
+</body>
+</html>
