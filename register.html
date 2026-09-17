@@ -1,91 +1,164 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Student Registration - Student Hub Portal</title>
+
+<title>Student Registration</title>
+
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f7ff;
+    color: #333;
+}
+
+header {
+    background-color: #6a4c93;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+nav {
+    background-color: #3c2a5e;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 8px;
+}
+
+nav a:hover {
+    color: #ffd166;
+    text-decoration: underline;
+}
+
+main {
+    width: 85%;
+    margin: 25px auto;
+}
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin: auto;
+    border-radius: 8px;
+    max-width: 600px;
+    border-left: 5px solid #6a4c93;
+}
+
+h2 {
+    color: #6a4c93;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    width: 95%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    width: auto;
+    background-color: #6a4c93;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #3c2a5e;
+}
+
+footer {
+    background-color: #3c2a5e;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 25px;
+}
+
+</style>
 </head>
-<body style="background-color: rgb(208, 150, 250);">
 
-    <!-- Header -->
-    <header>
-        <h1>Student Hub Portal</h1>
-        <h2>Student Registration</h2>
-        <hr>
-    </header>
+<body>
 
-    <!-- Navigation -->
-    <nav>
-        <a href="index.html">Home</a> |
-        <a href="about.html">About</a> |
-        <a href="login.html">Login</a> |
-        <a href="contact.html">Contact</a>
-    </nav>
+<header>
+<h1>StudentHub</h1>
+<p>Student Registration Form</p>
+</header>
 
-    <hr>
+<nav>
+<a href="index.html">Home</a> |
+<a href="about.html">About</a> |
+<a href="register.html">Register</a> |
+<a href="login.html">Login</a> |
+<a href="dashboard.html">Dashboard</a> |
+<a href="event.html">Events</a> |
+<a href="profile.html">Profile</a> |
+<a href="admin.html">Admin</a> |
+<a href="faq.html">FAQ</a> |
+<a href="feedback.html">Feedback</a> |
+</nav>
 
-    <!-- Registration Form -->
-    <main>
+<main>
 
-        <h2>Create Your Account</h2>
+<section>
 
-        <form action="register-success.html">
+<h2>Registration Form</h2>
 
-            <label>Full Name:</label><br>
-            <input type="text" required><br><br>
+<form action="login.html" method="post">
 
-            <label>Student ID:</label><br>
-            <input type="text" required><br><br>
+<label for="name">Full Name:</label><br>
+<input type="text" id="name" name="name" required><br><br>
 
-            <label>Email Address:</label><br>
-            <input type="email" required><br><br>
+<label for="studentid">Student ID:</label><br>
+<input type="text" id="studentid" name="studentid" required><br><br>
 
-            <label>Phone Number:</label><br>
-            <input type="tel" required><br><br>
+<label for="email">Email:</label><br>
+<input type="email" id="email" name="email" required><br><br>
 
-            <label>Course:</label><br>
-            <select required>
-                <option>Select Course</option>
-                <option>BCA</option>
-                <option>BBA</option>
-                <option>B.Com</option>
-                <option>B.Sc</option>
-                <option>BA</option>
-            </select><br><br>
+<label for="course">Course:</label><br>
+<input type="text" id="course" name="course"><br><br>
 
-            <label>Semester:</label><br>
-            <select required>
-                <option>Select Semester</option>
-                <option>Semester 1</option>
-                <option>Semester 2</option>
-                <option>Semester 3</option>
-                <option>Semester 4</option>
-                <option>Semester 5</option>
-                <option>Semester 6</option>
-            </select><br><br>
+<label for="semester">Semester:</label><br>
+<input type="number" id="semester" name="semester"><br><br>
 
-            <label>Create Password:</label><br>
-            <input type="password" required><br><br>
+<label for="password">Password:</label><br>
+<input type="password" id="password" name="password"><br><br>
 
-            <label>Confirm Password:</label><br>
-            <input type="password" required><br><br>
+<label for="confirm">Confirm Password:</label><br>
+<input type="password" id="confirm" name="confirm"><br><br>
 
-            <input type="submit" value="Register">
-            <input type="reset" value="Clear">
+<input type="submit" value="Register">
+<input type="reset" value="Clear">
 
-        </form>
+</form>
 
-        <br>
+</section>
 
-        <p>
-            Already have an account?
-            <a href="login.html">Login Here</a>
-        </p>
+</main>
 
-    </main>
-
-    <hr>
-
-    
+<footer>
+<p>© 2026 StudentHub</p>
+</footer>
 
 </body>
 </html>
+```

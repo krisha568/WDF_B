@@ -1,133 +1,144 @@
+```html
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Hub Portal</title>
+
+<title>StudentHub - Home</title>
+
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f7ff;
+    color: #333;
+}
+
+header {
+    background-color: #6a4c93;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    background-color: #3c2a5e;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 8px;
+}
+
+nav a:hover {
+    color: #ffd166;
+    text-decoration: underline;
+}
+
+main {
+    width: 85%;
+    margin: 25px auto;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border-left: 5px solid #6a4c93;
+}
+
+h2 {
+    color: #6a4c93;
+}
+
+img {
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #3c2a5e;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+</style>
 </head>
 
-<body style="background-color: rgb(208, 150, 250); font-family: Arial, sans-serif;">
+<body>
 
-    <!-- Header -->
-    <header>
-        <center>
-            <h1> Student Hub Portal</h1>
-            <p>Your Gateway to Learning and Campus Activities</p>
-            <hr>
-        </center>
-    </header>
+<header>
+<h1>StudentHub</h1>
+<p>Welcome to the Student Portal</p>
+</header>
 
-    <!-- Navigation Menu -->
-    <nav>
-        <center>
-            <a href="home.html">Home</a> |
-            <a href="about.html">About</a> |
-            <a href="register.html">Register</a> |
-            <a href="login.html">Login</a> |
-            <a href="dashboard.html">Dashboard</a> |
-            <a href="events.html">Events</a> |
-            <a href="profile.html">Profile</a> |
-            <a href="feedback.html">Feedback</a> |
-            <a href="faq.html">FAQ</a> |
-            <a href="admin.html">Admin</a> |
-            <a href="contact.html">Contact</a>
-        </center>
-    </nav>
+<nav>
+<a href="index.html">Home</a> |
+<a href="about.html">About</a> |
+<a href="register.html">Register</a> |
+<a href="login.html">Login</a> |
+<a href="dashboard.html">Dashboard</a> |
+<a href="event.html">Events</a> |
+<a href="profile.html">Profile</a> |
+<a href="admin.html">Admin</a> |
+<a href="faq.html">FAQ</a> |
+<a href="feedback.html">Feedback</a>
+</nav>
 
-    <hr>
+<main>
 
-    <!-- Main Content -->
-    <main>
+<section style="text-align:center;">
 
-        <h2>Welcome to Student Hub</h2>
+<h2>Welcome to StudentHub</h2>
 
-        <p>
-            Student Hub Portal is an online platform designed to help students
-            stay connected with academic resources, campus activities, events,
-            and important announcements. It provides a simple and secure way
-            to manage student information and participate in university programs.
-        </p>
+<p>
+StudentHub is a simple student portal created to help students
+access important academic information, events and college activities.
+</p>
 
-        <h3> Features</h3>
-        <ul>
-            <li>Student Registration</li>
-            <li>Secure Login System</li>
-            <li>Student Dashboard</li>
-            <li>Event Management</li>
-            <li>Profile Management</li>
-            <li>Feedback System</li>
-            <li>FAQ Support</li>
-            <li>Admin Control Panel</li>
-        </ul>
+</section>
 
-        <h3> Latest Announcements</h3>
-        <ol>
-            <li>New student registrations are now open.</li>
-            <li>Annual Tech Fest registrations start next week.</li>
-            <li>Library timings have been extended during examinations.</li>
-            <li>Campus placement training begins on Monday.</li>
-        </ol>
+<section>
 
-        <h3> Quick Links</h3>
-        <button onclick="location.href='register.html'">
-            Register Now
-        </button>
+<h2>Latest Announcements</h2>
 
-        <button onclick="location.href='login.html'">
-            Login
-        </button>
+<ul>
+<li>Semester registration starts from 10 August.</li>
+<li>Freshers event will be held on 16 August.</li>
+<li>Assignment submission deadline is 20 August.</li>
+</ul>
 
-        <button onclick="location.href='events.html'">
-            View Events
-        </button>
+</section>
 
-        <button onclick="location.href='explorenow.html'">
-            Explore Now
-        </button>
+<section>
 
-        <hr>
+<h2>Quick Links</h2>
 
-        <h3> Student Statistics</h3>
-        <table border="1" cellpadding="10">
-            <tr>
-                <th>Category</th>
-                <th>Count</th>
-            </tr>
-            <tr>
-                <td>Registered Students</td>
-                <td>1500+</td>
-            </tr>
-            <tr>
-                <td>Events Conducted</td>
-                <td>120+</td>
-            </tr>
-            <tr>
-                <td>Faculty Members</td>
-                <td>80+</td>
-            </tr>
-        </table>
+<ul>
+<li>Student Registration</li>
+<li>Upcoming Events</li>
+<li>Student Dashboard</li>
+<li>Feedback Form</li>
+</ul>
 
-    </main>
+</section>
 
-    <hr>
+</main>
 
-    <!-- Footer -->
-    <footer>
-        <center>
-            <h3>Contact Information</h3>
-            <p>Email: studenthub@college.com</p>
-            <p>Phone: +91 98765 43210</p>
-            <p>Address: Student Hub Campus, Ahmedabad, Gujarat</p>
-
-            <p>
-                <a href="contact.html">Contact Us</a> |
-                <a href="feedback.html">Feedback</a> |
-                <a href="faq.html">FAQ</a>
-            </p>
-
-            
-        </center>
-    </footer>
+<footer>
+<p>© 2026 StudentHub</p>
+</footer>
 
 </body>
+
 </html>
+```
