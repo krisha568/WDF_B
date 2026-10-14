@@ -1,184 +1,102 @@
 ```html
 <!DOCTYPE html>
 <html>
-
 <head>
-
-<title>Admin Panel</title>
-
-<style>
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #f0f7ff;
-    color: #333;
-}
-
-header {
-    background-color: #6a4c93;
-    color: white;
-    text-align: center;
-    padding: 25px;
-}
-
-nav {
-    background-color: #3c2a5e;
-    text-align: center;
-    padding: 15px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 8px;
-}
-
-nav a:hover {
-    color: #ffd166;
-    text-decoration: underline;
-}
-
-main {
-    width: 85%;
-    margin: 25px auto;
-}
-
-section {
-    background-color: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    border-left: 5px solid #6a4c93;
-}
-
-h2 {
-    color: #6a4c93;
-}
-
-li {
-    margin: 10px;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-th, td {
-    border: 1px solid #aaa;
-    padding: 12px;
-}
-
-th {
-    background-color: #e6dcf5;
-    color: #3c2a5e;
-}
-
-footer {
-    background-color: #3c2a5e;
-    color: white;
-    text-align: center;
-    padding: 15px;
-}
-
-</style>
+    <title>Admin Panel</title>
 </head>
 
-<body>
+<body style="background-color: #F0F8FF;">
 
-<header>
-<h1>StudentHub</h1>
-<p>Admin Panel</p>
-</header>
+    <header align="center">
+        <h1>Admin Panel</h1>
+    </header>
 
-<nav>
-<a href="index.html">Home</a> |
-<a href="about.html">About</a> |
-<a href="register.html">Register</a> |
-<a href="login.html">Login</a> |
-<a href="dashboard.html">Dashboard</a> |
-<a href="event.html">Events</a> |
-<a href="profile.html">Profile</a> |
-<a href="admin.html">Admin</a> |
-<a href="faq.html">FAQ</a> |
-<a href="feedback.html">Feedback</a>
-</nav>
+    <hr>
 
-<main>
+    <nav align="center">
+        <a href="index.html">Home</a> |
+        <a href="about.html">About</a> |
+        <a href="courses.html">Courses</a> |
+        <a href="dashboard.html">Dashboard</a> |
+        <a href="attendance.html">Attendance</a> |
+        <a href="marks.html">Marks</a> |
+        <a href="timetable.html">Timetable</a> |
+        <a href="event.html">Event</a> |
+        <a href="admin.html">Admin</a> |
+        <a href="faq.html">FAQ</a> |
+        <a href="register.html">Register</a> |
+        <a href="login.html">Login</a> |
+        <a href="profile.html">Profile</a> |
+        <a href="contact.html">Contact</a> |
+        <a href="feedback.html">Feedback</a>
+    </nav>
 
-<section>
+    <hr>
 
-<h2>Administrator Functions</h2>
+    <main>
 
-<ul>
-<li>Add New Students</li>
-<li>Update Student Records</li>
-<li>Manage College Events</li>
-<li>Post Announcements</li>
-<li>View Student Feedback</li>
-<li>Generate Reports</li>
-<li>Manage User Accounts</li>
-</ul>
+        <section align="center">
+            <h2>Administrator Functions</h2>
 
-</section>
+            <ul style="display: inline-block; text-align: left;">
+                <li>Add New Students</li>
+                <li>Update Student Records</li>
+                <li>Manage College Events</li>
+                <li>Post Announcements</li>
+                <li>View Student Feedback</li>
+                <li>Generate Reports</li>
+                <li>Manage User Accounts</li>
+            </ul>
+        </section>
 
-<section>
+        <section align="center">
+            <h2>Admin Dashboard</h2>
 
-<h2>Admin Dashboard</h2>
+            <table border="1" cellpadding="10" cellspacing="0" align="center">
+                <tr>
+                    <th>Module</th>
+                    <th>Status</th>
+                </tr>
 
-<table>
+                <tr>
+                    <td>Student Records</td>
+                    <td>Available</td>
+                </tr>
 
-<tr>
-<th>Module</th>
-<th>Status</th>
-</tr>
+                <tr>
+                    <td>Events</td>
+                    <td>Available</td>
+                </tr>
 
-<tr>
-<td>Student Records</td>
-<td>Available</td>
-</tr>
+                <tr>
+                    <td>Feedback</td>
+                    <td>Available</td>
+                </tr>
 
-<tr>
-<td>Events</td>
-<td>Available</td>
-</tr>
+                <tr>
+                    <td>Reports</td>
+                    <td>Available</td>
+                </tr>
 
-<tr>
-<td>Feedback</td>
-<td>Available</td>
-</tr>
+                <tr>
+                    <td>User Accounts</td>
+                    <td>Available</td>
+                </tr>
+            </table>
+        </section>
 
-<tr>
-<td>Reports</td>
-<td>Available</td>
-</tr>
+        <section align="center">
+            <h2>Notice</h2>
 
-<tr>
-<td>User Accounts</td>
-<td>Available</td>
-</tr>
+            <p>
+                Only authorized administrators can manage student records
+                and portal information.
+            </p>
+        </section>
 
-</table>
+    </main>
 
-</section>
-
-<section>
-
-<h2>Notice</h2>
-
-<p>
-Only authorized administrators can manage student records and portal information.
-</p>
-
-</section>
-
-</main>
-
-<footer>
-<p>© 2026 StudentHub</p>
-</footer>
+    <hr>
 
 </body>
 </html>
-```

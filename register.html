@@ -1,164 +1,68 @@
 ```html
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-
-<title>Student Registration</title>
-
-<style>
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #f0f7ff;
-    color: #333;
-}
-
-header {
-    background-color: #6a4c93;
-    color: white;
-    text-align: center;
-    padding: 25px;
-}
-
-nav {
-    background-color: #3c2a5e;
-    text-align: center;
-    padding: 15px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 8px;
-}
-
-nav a:hover {
-    color: #ffd166;
-    text-decoration: underline;
-}
-
-main {
-    width: 85%;
-    margin: 25px auto;
-}
-
-section {
-    background-color: white;
-    padding: 25px;
-    margin: auto;
-    border-radius: 8px;
-    max-width: 600px;
-    border-left: 5px solid #6a4c93;
-}
-
-h2 {
-    color: #6a4c93;
-}
-
-label {
-    font-weight: bold;
-}
-
-input {
-    width: 95%;
-    padding: 10px;
-    margin-top: 5px;
-    box-sizing: border-box;
-    border: 1px solid #aaa;
-    border-radius: 4px;
-}
-
-input[type="submit"],
-input[type="reset"] {
-    width: auto;
-    background-color: #6a4c93;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin: 5px;
-    cursor: pointer;
-}
-
-input[type="submit"]:hover,
-input[type="reset"]:hover {
-    background-color: #3c2a5e;
-}
-
-footer {
-    background-color: #3c2a5e;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    margin-top: 25px;
-}
-
-</style>
+    <title>Student Registration</title>
 </head>
 
-<body>
+<body style="background-color: #F0F8FF;">
 
-<header>
-<h1>StudentHub</h1>
-<p>Student Registration Form</p>
-</header>
+    <h1 align="center">Registration</h1>
+    <hr>
 
-<nav>
-<a href="index.html">Home</a> |
-<a href="about.html">About</a> |
-<a href="register.html">Register</a> |
-<a href="login.html">Login</a> |
-<a href="dashboard.html">Dashboard</a> |
-<a href="event.html">Events</a> |
-<a href="profile.html">Profile</a> |
-<a href="admin.html">Admin</a> |
-<a href="faq.html">FAQ</a> |
-<a href="feedback.html">Feedback</a> |
-</nav>
+    <nav align="center">
+        <a href="index.html">Home</a> |
+        <a href="about.html">About</a> |
+        <a href="courses.html">Courses</a> |
+        <a href="dashboard.html">Dashboard</a> |
+        <a href="attendance.html">Attendance</a> |
+        <a href="marks.html">Marks</a> |
+        <a href="timetable.html">Timetable</a> |
+        <a href="event.html">Event</a> |
+        <a href="admin.html">Admin</a> |
+        <a href="faq.html">FAQ</a> |
+        <a href="register.html">Register</a> |
+        <a href="login.html">Login</a> |
+        <a href="profile.html">Profile</a> |
+        <a href="contact.html">Contact</a> |
+        <a href="feedback.html">Feedback</a>
+    </nav>
 
-<main>
+    <hr>
 
-<section>
+    <main>
+        <section>
+            <h2 align="center">Registration Form</h2>
 
-<h2>Registration Form</h2>
+            <form align="center">
+                <label for="name">Full Name:</label><br>
+                <input type="text" id="name"><br><br>
 
-<form action="login.html" method="post">
+                <label for="id">Student ID:</label><br>
+                <input type="text" id="id"><br><br>
 
-<label for="name">Full Name:</label><br>
-<input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email"><br><br>
 
-<label for="studentid">Student ID:</label><br>
-<input type="text" id="studentid" name="studentid" required><br><br>
+                <label for="course">Course:</label><br>
+                <input type="text" id="course"><br><br>
 
-<label for="email">Email:</label><br>
-<input type="email" id="email" name="email" required><br><br>
+                <label for="semester">Semester:</label><br>
+                <input type="number" id="semester"><br><br>
 
-<label for="course">Course:</label><br>
-<input type="text" id="course" name="course"><br><br>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password"><br><br>
 
-<label for="semester">Semester:</label><br>
-<input type="number" id="semester" name="semester"><br><br>
+                <label for="confirm">Confirm Password:</label><br>
+                <input type="password" id="confirm"><br><br>
 
-<label for="password">Password:</label><br>
-<input type="password" id="password" name="password"><br><br>
+                <input type="submit" value="Register">
+                <input type="reset" value="Clear">
+            </form>
+        </section>
+    </main>
 
-<label for="confirm">Confirm Password:</label><br>
-<input type="password" id="confirm" name="confirm"><br><br>
-
-<input type="submit" value="Register">
-<input type="reset" value="Clear">
-
-</form>
-
-</section>
-
-</main>
-
-<footer>
-<p>© 2026 StudentHub</p>
-</footer>
+    <hr>
 
 </body>
 </html>
-```
