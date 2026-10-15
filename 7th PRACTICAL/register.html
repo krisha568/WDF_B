@@ -1,0 +1,246 @@
+```html
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Student Registration</title>
+
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #F0F8FF;
+    color: #333;
+}
+
+header {
+    background-color: #2c6e9e;
+    color: white;
+    text-align: center;1
+    padding: 25px;
+}
+
+nav {
+    background-color: #164a70;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 8px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    width: 85%;
+    margin: 25px auto;
+}
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin: auto;
+    border-radius: 8px;
+    max-width: 600px;
+}
+
+h2 {
+    color: #2c6e9e;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    width: 95%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    width: auto;
+    background-color: #2c6e9e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #164a70;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 25px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>StudentHub</h1>
+<p>Student Registration Form</p>
+</header>
+
+<nav>
+<a href="index.html">Home</a> |
+<a href="about.html">About</a> |
+<a href="register.html">Register</a> |
+<a href="login.html">Login</a> |
+<a href="dashboard.html">Dashboard</a> |
+<a href="event.html">Events</a> |
+<a href="profile.html">Profile</a> |
+<a href="admin.html">Admin</a> |
+<a href="faq.html">FAQ</a> |
+<a href="feedback.html">Feedback</a> |
+</nav>
+
+<main>
+
+<section>
+
+<h2>Registration Form</h2>
+
+<form id="registerForm">
+
+<!-- NAME -->
+
+<label for="name">Name:</label>
+
+<input
+    type="text"
+    id="name"
+    placeholder="Enter your name"
+    required
+>
+
+<p id="nameError" class="error"></p>
+
+<!-- EMAIL -->
+
+<label for="email">Email:</label>
+
+<input
+    type="email"
+    id="email"
+    placeholder="Enter your email"
+    required
+>
+
+<p id="emailError" class="error"></p>
+
+<!-- MOBILE -->
+
+<label for="mobile">Mobile Number:</label>
+
+<input
+    type="tel"
+    id="mobile"
+    placeholder="Enter 10 digit mobile number"
+    required
+>
+
+<p id="mobileError" class="error"></p>
+
+<!-- PASSWORD -->
+
+<label for="password">Password:</label>
+
+<input
+    type="password"
+    id="password"
+    placeholder="Enter password"
+    required
+>
+
+<p id="passwordError" class="error"></p>
+
+<!-- CONFIRM PASSWORD -->
+
+<label for="confirmPassword">Confirm Password:</label>
+
+<input
+    type="password"
+    id="confirmPassword"
+    placeholder="Enter password again"
+    required
+>
+
+<p id="confirmError" class="error"></p>
+
+<!-- COURSE -->
+
+<label for="course">Course:</label>
+
+<select id="course" required>
+
+<option value="">Select Course</option>
+
+<option>B.Tech IT</option>
+
+<option>B.Tech CSE</option>
+
+<option>B.Tech CE</option>
+
+<option>B.Tech ME</option>
+
+</select>
+
+<p id="courseError" class="error"></p>
+
+<!-- YEAR -->
+
+<label for="year">Year:</label>
+
+<select id="year" required>
+
+<option value="">Select Year</option>
+
+<option>First Year</option>
+
+<option>Second Year</option>
+
+<option>Third Year</option>
+
+<option>Fourth Year</option>
+
+</select>
+
+<p id="yearError" class="error"></p>
+
+<!-- GENDER -->
+
+<label>Gender:</label>
+
+<br>
+
+<input type="radio" name="gender" value="Male">
+
+<label>Male</label>
+
+<input type="radio" name="gender" value="Female">
+
+<label>Female</label>
+
+<input type="radio" name="gender" value="Other">
+
+<label>Other</label>
+
+<p id="genderError" class="error"></p>
+
+<!-- TERMS -->
+
+<input type="checkbox" id="terms">
+
