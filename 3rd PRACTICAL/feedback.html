@@ -1,0 +1,164 @@
+```html
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Student Feedback</title>
+
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #F0F8FF;
+    color: #333;
+}
+
+header {
+    background-color: #2c6e9e;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+nav {
+    background-color: #164a70;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 8px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    width: 85%;
+    margin: 25px auto;
+}
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #2c6e9e;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, select, textarea {
+    padding: 10px;
+    margin-top: 5px;
+    width: 95%;
+    box-sizing: border-box;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    width: auto;
+    background-color: #2c6e9e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #164a70;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>StudentHub</h1>
+<p>Student Feedback Form</p>
+</header>
+
+<nav>
+<a href="index.html">Home</a> |
+<a href="about.html">About</a> |
+<a href="register.html">Register</a> |
+<a href="login.html">Login</a> |
+<a href="dashboard.html">Dashboard</a> |
+<a href="event.html">Events</a> |
+<a href="profile.html">Profile</a> |
+<a href="admin.html">Admin</a> |
+<a href="faq.html">FAQ</a> |
+<a href="feedback.html">Feedback</a> |
+</nav>
+
+<main>
+
+<section>
+
+<h2>Feedback Form</h2>
+
+<form>
+
+<label for="name">Name:</label><br>
+<input type="text" id="name" name="name" required><br><br>
+
+<label for="email">Email:</label><br>
+<input type="email" id="email" name="email" required><br><br>
+
+<label for="rating">Rating:</label><br>
+
+<select id="rating" name="rating">
+
+<option>Excellent</option>
+<option>Good</option>
+<option>Average</option>
+<option>Poor</option>
+
+</select>
+
+<br><br>
+
+<label for="message">Comments:</label><br>
+
+<textarea id="message" name="message" rows="5"></textarea>
+
+<br><br>
+
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+
+</form>
+
+</section>
+
+<section>
+
+<h2>Why Your Feedback Matters</h2>
+
+<ul>
+<li>Helps improve StudentHub.</li>
+<li>Helps us understand student needs.</li>
+<li>Improves future services.</li>
+</ul>
+
+</section>
+
+</main>
+
+</body>
+</html>
